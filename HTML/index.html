@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ok.css">
+</head>
+<body>
+  <main>
+    <div id="banner">
+      <div id="mensagem"><img src="tt.png" class="image"></div>
+  </div>
+  
+  <script>
+      var mensagemElement = document.getElementById("mensagem");
+      var bannerWidth = document.getElementById("banner").offsetWidth;
+  
+      function animarMensagem() {
+          var left = -200; // Inicializa a posição à esquerda da tela
+          var interval = setInterval(function() {
+              left += 5; // Move 5 pixels à direita a cada iteração
+              mensagemElement.style.left = left + "px";
+  
+              // Verifica se a mensagem atingiu o final do banner
+              if (left >= bannerWidth) {
+                  clearInterval(interval); // Para a animação
+                  setTimeout(function() {
+                      mensagemElement.style.left = "-200px"; // Reinicia a mensagem à esquerda
+                      animarMensagem(); // Inicia a animação novamente
+                  }, 1000); // Espera 1 segundo antes de reiniciar
+              }
+          }, 30); // Intervalo de 30 milissegundos para suavizar a animação
+      }
+  
+      animarMensagem(); // Inicia a animação quando a página carrega
+  </script>
+
+    
+    <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="evermore.jpg" alt="Foto 01">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="midnights.jpg" alt="Foto 02">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="tv.jpg" alt="Foto 03">
+            </div>
+            
+          </div>
+        </div>
+      
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+  
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="teste.js"></script>
+<!--movies---------------------------->
+<div class="movies-heading">
+  <h2></h2>
+</div>
+<section id="movies-list">
+  <!--box-1------------------------>
+  <div class="header"></div>
+    <div class="scrollable">
+  <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <img src="reputation.jpg">
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: Reputation ST Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-2------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <img src="tour.jpg">
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: The Eras Tour Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-3------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <img src="folklore.jpg">
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: Folklore the long pond studios sessions Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-4------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <img src="lover.jpg">
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: Lover Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-5------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <img src="ever.jpg">
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: Lover Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-6------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <img src="miss.jpg">
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: Miss Americana Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-7------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <img src="ts.jpg">
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: 1989 Full Movie[In English] With Portuguese Subtitles
+      </a>
+  </div>
+   <!--box-8------------------------>
+   <div class="movies-box">
+      <!--img------------>
+      <div class="movies-img">
+          <div class="quality">TAYLOR</div>
+          <img src="aaa.jpg">
+      </div>
+      <!--text--------->
+      <a href="#">
+          Taylor Swift: Old and Beautiful Full Movie[In English] With English Subtitle
+      </a>
+      
+  </div>
+  <center><a href="html.html" id="logo"> <input type="submit" value="COMPRAR" class="enviar"></center></a>
+  <div class="footer"></div>
+  <script src="script.js"></script>
+</section>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
